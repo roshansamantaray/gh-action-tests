@@ -20,3 +20,4 @@ jobs:
     with:
       deploy_branch: ${{ github.ref_name }}
       version: "1.2.3"  # You can test passing a custom version
+      version_source: "gradle"
