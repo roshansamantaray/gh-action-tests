@@ -11,7 +11,7 @@ on:
 
 jobs:
   deploy:
-    uses: secure-software-engineering/actions/.github/workflows/gh-pages.yml@roshansamantaray-patch-1
+    uses: secure-software-engineering/actions/gh-pages.yml@roshansamantaray-patch-1
     with:
       deploy_branch: ${{ github.ref_name }}
       version: "1.2.3"  # You can test passing a custom version
