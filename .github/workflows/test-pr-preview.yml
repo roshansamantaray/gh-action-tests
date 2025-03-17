@@ -1,8 +1,10 @@
 name: Test PR Preview Deployment
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+    pull_request:
+      types: [ opened, synchronize, reopened, closed ]
+
 
 jobs:
   deploy-pr-preview:
