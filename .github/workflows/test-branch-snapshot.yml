@@ -1,5 +1,10 @@
 name: Test Branch Snapshot Deployment
 
+permissions:
+  contents: write
+  pages: write
+  deployments: write
+
 on:
   workflow_dispatch:
     push:

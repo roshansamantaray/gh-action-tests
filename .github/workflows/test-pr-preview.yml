@@ -1,5 +1,10 @@
 name: Test PR Preview Deployment
 
+permissions:
+  contents: write
+  pages: write
+  deployments: write
+
 on:
   workflow_dispatch:
     pull_request:
