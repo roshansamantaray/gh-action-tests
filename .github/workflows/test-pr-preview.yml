@@ -1,0 +1,11 @@
+name: Test PR Preview Deployment
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  deploy-pr-preview:
+    uses: roshansamantaray/test-repo/.github/workflows/pages-pr-review.yml@main
+    with:
+      enable_comment: true

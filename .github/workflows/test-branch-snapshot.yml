@@ -1,0 +1,14 @@
+name: Test Branch Snapshot Deployment
+
+on:
+  push:
+    branches:
+      - develop
+      - release/*
+
+jobs:
+  deploy-snapshot:
+    uses: roshansamantaray/test-repo/.github/workflows/pages-branch-snapshot.yml@main
+    with:
+      deploy_branch: ${{ github.ref_name }}
+      version: "maven"
